@@ -48,11 +48,11 @@ const Command = async(client, message, args, cmd) => {
         timestamps.set(message.author.id, now);
         setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
-        if (command.config.ownerOnly == true && client.conf.Discord.owner !== message.author.id) {
+        if (command.config.ownerOnly == true && conf.Discord.owner !== message.author.id) {
             return utils.error(message, `:warning: **This command is restricted to Developers of ${client.user.username}.** :warning:`, 10000);
         }
 
-        if (command.config.restricted == true && !client.conf.Discord.central_hub.admins.includes(message.author.id)) {
+        if (command.config.restricted == true && !conf.Discord.central_hub.admins.includes(message.author.id)) {
             return utils.error(message, `:warning: **This command is restricted to Administrators of ${client.user.username}.** :warning:`, 10000);
         }
 
