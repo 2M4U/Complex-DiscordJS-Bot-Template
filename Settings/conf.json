@@ -1,6 +1,11 @@
 {
     "Discord": {
         "token": "",
-        "prefix": "++"
+        "prefix": "++",
+        "central_hub":{
+            "main_guild_id": "",
+            "log_guild_id": "",
+            "admins": ["","",""]
+        }    
     }
 }
