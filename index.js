@@ -19,7 +19,7 @@ client.on("message", (message) => Events.message.init(client, message));
 client.login(conf.Discord.token);
 
 /** NODE PROCESS HANDLING */
-process.on('unhandledRejection', error => {
+process.on('unhandledRejection', (error) => {
     console.error("[UNHANDLED REJECTION] " + (error.stack == undefined ? error : error.stack));
     lazy.npm(error);
 });
