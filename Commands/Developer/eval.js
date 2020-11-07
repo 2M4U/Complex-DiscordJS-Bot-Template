@@ -1,3 +1,5 @@
+//** NEVER EVER EVER LET ANYONE HAVE ACCESS TO THIS COMMAND AS IT IS EXPOSES FEATURES OF YOUR OPERATING SYSTEM AND CAN BE VERY DANGEROUS IN THE WRONG HANDS **//
+
 const Discord = require("discord.js");
 const hastebin = require("hastebin-gen"); // May need updating to v2 of this NPM by Jacz
 const conf = require("../../Settings/conf.json");
