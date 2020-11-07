@@ -28,4 +28,4 @@ const CommandReloader = async() => {
     });
 };
 
-module.exports.reload = CommandReloader;
+module.exports.init = CommandReloader;

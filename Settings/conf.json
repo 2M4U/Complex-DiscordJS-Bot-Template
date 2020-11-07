@@ -2,10 +2,13 @@
     "Discord": {
         "token": "",
         "prefix": "++",
-        "central_hub":{
-            "main_guild_id": "",
-            "log_guild_id": "",
-            "admins": ["","",""]
-        }    
+        "invite_link_perms": [
+            "SEND_MESSAGES",
+            "MANAGE_GUILD",
+            "EMBED_LINKS"
+        ],
+        "bot_admins": [
+            "THEIR_USER_ID"
+        ]
     }
 }

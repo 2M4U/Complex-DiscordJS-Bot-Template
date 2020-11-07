@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const moment = require("moment");
+
 module.exports.run = (client, message) => {
     const embed = new Discord.MessageEmbed();
     embed.setTitle(`**__${client.user.username}'s Information__**`);
@@ -19,9 +20,10 @@ module.exports.help = {
     description: "Find out information about the bot",
     usage: "(command name)",
     category: "General",
-    cooldown: 60 // Counted in MS
+    cooldown: 30 // Counted in MS
 };
 
 module.exports.config = {
     restricted: false,
+    ownerOnly: false
 };

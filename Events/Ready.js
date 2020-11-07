@@ -1,12 +1,17 @@
 const CommandLoader = require("../Lib/Loaders/Commands");
-const Commands = require("../Lib/Reloaders/CommandsReloader");
-
+const CommandsReloader = require("../Lib/Reloaders/CommandsReloader");
+const EventsReloader = require("../Lib/Reloaders/EventsReloader");
+const conf = require("../Settings/conf.json")
 const Ready = async(client) => {
     if (client.guilds.cache.size < 1) {
-        console.log(`Invite me to a server: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2146958591/`);
+        client.generateInvite({
+            permissions: conf.Discord.invite_link_perms,
+        }).then(link => console.log(`Generated bot invite link: \n${link}`)).catch(console.error);
     }
     console.log("Bot Online And Ready!");
+
     CommandLoader.load();
-    Commands.reload();
+    CommandsReloader.init();
+    EventsReloader.init(client);
 };
-module.exports = Ready;
+module.exports.init = Ready;

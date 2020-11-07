@@ -52,7 +52,7 @@ const Command = async(client, message, args, cmd) => {
             return utils.error(message, `:warning: **This command is restricted to Developers of ${client.user.username}.** :warning:`, 10000);
         }
 
-        if (command.config.restricted == true && !conf.Discord.central_hub.admins.includes(message.author.id)) {
+        if (command.config.restricted == true && !conf.Discord.admins.includes(message.author.id)) {
             return utils.error(message, `:warning: **This command is restricted to Administrators of ${client.user.username}.** :warning:`, 10000);
         }
 

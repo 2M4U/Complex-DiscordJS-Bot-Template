@@ -13,4 +13,4 @@ const Message = async(client, message) => {
     Command.trigger(client, message, args, cmd);
 };
 
-module.exports = Message;
+module.exports.init = Message;
