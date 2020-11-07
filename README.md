@@ -13,14 +13,12 @@ _This is a **Work In Progress** starter template for Discord Bot's built on **di
 
 **To create a new Discord Bot Application:**
  
-> Visit Discords Developer Portal: https://discord.com/developers/applications/
+> [Step 1] Visit Discords Developer Portal: https://discord.com/developers/applications/
 
-> Click "New Application", 
+> [Step 2] Click "New Application", 
+> [Step 3] Enter in your application name,
+> [Step 4] Click on "Bot", 
+> [Step 5] Then make your application, obtain your bot token,
+> [Step 6] Put your bot's token inside the conf.json file found [here](https://github.com/CyberCDN/Simple-DJS-Template/blob/main/Settings/conf.json),
+> [Step 7] Type `npm i` into your console; then once all packages are installed type `node index`.  
 
-> Enter in your application name,
-
-> Click on "Bot", 
-
-> Then make your application into a bot process.
-
-> This will allow you to obtain your Discord Bot's Token.
