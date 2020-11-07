@@ -7,21 +7,21 @@ const CommandLoader = async() => {
     categories.forEach(category => {
         const files = fs.readdirSync(`${__dirname}/../../Commands/${category}`);
         if (files.length < 1) {
-            console.log(`No commands found in ${category}. `)
+            console.log(`[Command Loader]: No commands found in ${category}. `)
         } else {
-            console.log(`Total ${category} ${files.length} Commands Found.`)
+            console.log(`[Command Loader]: Total ${category} Commands Found: ${files.length}.`)
         }
 
         files.forEach(command => {
             if (command.split(".").slice(-1)[0] !== "js") return;
-            console.log(`Loaded ${command.replace(".js", "")} from ${category}.`)
             const props = require(`${__dirname}/../../Commands/${category}/${command}`);
-
+            let a = [];
             commands.set(props.help.name, props);
             props.help.aliases.forEach(alias => {
                 aliases.set(alias, props.help.name);
-                console.log(`${command.replace(".js", "")} from ${category} with aliases ${alias} loaded.`);
+                a.push(alias);
             });
+            console.log(`[Command Loader]: Loaded ${command.replace(".js", "")} from ${category} with aliases ${a}.`);
         });
     });
 };
