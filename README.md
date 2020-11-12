@@ -1,4 +1,4 @@
-Simple/Complex Discord.js Bot Template (v12+ Compatible)
+Complex Discord.js Bot Template (v12+ Compatible)
 =
 _This is a **Work In Progress** starter template for Discord Bot's built on **discord.js**._
 
