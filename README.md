@@ -27,3 +27,6 @@ _This is a **Work In Progress** starter template for Discord Bot's built on **di
 
 > [Step 7] Type `npm i` into your console; then once all packages are installed type `node index`.  
 
+Contributers
+=
+Feel free to contribute to this project, simply by making a Fork of this Repo; modify it to your liking then create a PR.
