@@ -42,3 +42,6 @@ Feel free to contribute to this project, simply by making a Fork of this Repo; m
 Support For Self-hosting
 =
 You can join our [Botcordia Community](https://top.gg/servers/776733782560473099/join) for more help how to self-host this repository.
+
+
+ <p style="text-align: center;">Copyright &copy; 2020 Botcordia Community, All rights reserved.</p>
