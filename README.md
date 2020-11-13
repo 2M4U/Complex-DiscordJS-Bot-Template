@@ -10,8 +10,16 @@ _This is a **Work In Progress** starter template for Discord Bot's built on **di
 </kbd>
 
 ---
+Features
+=
+:fire: Hot-reloading Commands/Events 
 
-**To create a new Discord Bot Application:**
+:computer: NPM Package Installer
+
+:question: Much More to come...
+
+***To create a new Discord Bot Application:***
+
  
 > [Step 1] Visit Discords Developer Portal: https://discord.com/developers/applications/
 
