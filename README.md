@@ -14,7 +14,7 @@ Features
 =
 :fire: Hot-reloading Commands/Events 
 
-:computer: NPM Package Installer
+:computer: ~~NPM Package Installer~~ *Now Deprecated* 
 
 :question: Much More to come...
 
