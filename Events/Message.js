@@ -1,4 +1,4 @@
-const Command = require("../Lib/Handlers/CommandHandler");
+const Command = require("../Src/Handlers/CommandHandler");
 const conf = require("../Settings/conf.json");
 
 const Message = async(client, message) => {

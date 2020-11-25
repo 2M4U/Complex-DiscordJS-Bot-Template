@@ -1,0 +1,15 @@
+{
+    "Discord": {
+        "owner": "owner_user_id",
+        "token": "",
+        "prefix": "++",
+        "invite_link_perms": [
+            "SEND_MESSAGES",
+            "MANAGE_GUILD",
+            "EMBED_LINKS"
+        ],
+        "bot_admins": [
+            "THEIR_USER_ID"
+        ]
+    }
+}

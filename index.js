@@ -1,5 +1,5 @@
 const { Client, Intents } = require("discord.js");
-const Events = require("./Lib/Handlers/EventHandler");
+const Events = require("./Src/Handlers/EventHandler");
 const conf = require("./Settings/conf.json");
 
 console.clear();
