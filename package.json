@@ -9,7 +9,6 @@
         "fs": "^0.0.1-security",
         "hastebin-gen": "^2.0.5",
         "lazyinstaller": "^1.0.0",
-        "lol": "^1.0.101-lol",
         "moment": "^2.29.1",
         "node-fetch": "^2.6.1",
         "path": "^0.12.7",
