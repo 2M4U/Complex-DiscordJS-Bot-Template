@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const hastebin = require("hastebin-gen"); // May need updating to v2 of this NPM by Jacz
 const conf = require("../../Settings/conf.json");
-require("lol");
+
 const clean = (text) => {
     if (typeof(text) === "string") {
         return text.replace(/`/g, '`' + String.fromCharCode(8203)).replace(/@/g, '@' + String.fromCharCode(8203))
